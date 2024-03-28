@@ -1,0 +1,34 @@
+[2024-03-28 18:17:51,957] _internal.py - 96 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.30.20.30:8000
+[2024-03-28 18:17:51,958] _internal.py - 96 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-03-28 18:18:05,049] app.py - 1414 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ayush.sonu/Desktop/end-to-end/env/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ayush.sonu/Desktop/end-to-end/env/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ayush.sonu/Desktop/end-to-end/env/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ayush.sonu/Desktop/end-to-end/env/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ayush.sonu/Desktop/end-to-end/app.py", line 10, in home_page
+    return render_template("index.html")
+  File "/home/ayush.sonu/Desktop/end-to-end/env/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/ayush.sonu/Desktop/end-to-end/env/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/ayush.sonu/Desktop/end-to-end/env/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/ayush.sonu/Desktop/end-to-end/env/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/ayush.sonu/Desktop/end-to-end/env/lib/python3.8/site-packages/jinja2/loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/ayush.sonu/Desktop/end-to-end/env/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/ayush.sonu/Desktop/end-to-end/env/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2024-03-28 18:18:05,060] _internal.py - 96 - werkzeug - INFO - 127.0.0.1 - - [28/Mar/2024 18:18:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-03-28 18:18:05,448] _internal.py - 96 - werkzeug - INFO - 127.0.0.1 - - [28/Mar/2024 18:18:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

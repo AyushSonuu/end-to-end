@@ -1,0 +1,21 @@
+[2024-03-28 18:29:28,560] _internal.py - 96 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6001
+ * Running on http://172.30.20.30:6001
+[2024-03-28 18:29:28,560] _internal.py - 96 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-03-28 18:29:30,044] _internal.py - 96 - werkzeug - INFO - 127.0.0.1 - - [28/Mar/2024 18:29:30] "GET / HTTP/1.1" 200 -
+[2024-03-28 18:29:47,231] _internal.py - 96 - werkzeug - INFO - 127.0.0.1 - - [28/Mar/2024 18:29:47] "GET / HTTP/1.1" 200 -
+[2024-03-28 18:29:48,959] _internal.py - 96 - werkzeug - INFO - 127.0.0.1 - - [28/Mar/2024 18:29:48] "GET / HTTP/1.1" 200 -
+[2024-03-28 18:29:49,546] _internal.py - 96 - werkzeug - INFO - 127.0.0.1 - - [28/Mar/2024 18:29:49] "GET / HTTP/1.1" 200 -
+[2024-03-28 18:29:49,832] _internal.py - 96 - werkzeug - INFO - 127.0.0.1 - - [28/Mar/2024 18:29:49] "GET / HTTP/1.1" 200 -
+[2024-03-28 18:29:50,007] _internal.py - 96 - werkzeug - INFO - 127.0.0.1 - - [28/Mar/2024 18:29:50] "GET / HTTP/1.1" 200 -
+[2024-03-28 18:29:58,796] _internal.py - 96 - werkzeug - INFO - 127.0.0.1 - - [28/Mar/2024 18:29:58] "GET /predict HTTP/1.1" 200 -
+[2024-03-28 18:31:44,257] prediction_pipeline.py - 68 - root - INFO - Dataframe Gathered
+[2024-03-28 18:31:44,283] prediction_pipeline.py - 69 - root - INFO -    carat  depth  table    x    y    z   cut color clarity
+0   24.0    2.0    2.0  2.0  4.0  2.0  Fair     D     SI2
+[2024-03-28 18:31:44,370] _internal.py - 96 - werkzeug - INFO - 127.0.0.1 - - [28/Mar/2024 18:31:44] "POST /predict HTTP/1.1" 200 -
+[2024-03-28 18:31:51,125] _internal.py - 96 - werkzeug - INFO - 127.0.0.1 - - [28/Mar/2024 18:31:51] "GET /predict HTTP/1.1" 200 -
+[2024-03-28 18:34:52,661] _internal.py - 96 - werkzeug - INFO - 127.0.0.1 - - [28/Mar/2024 18:34:52] "GET / HTTP/1.1" 200 -
+[2024-03-28 19:05:04,464] _internal.py - 96 - werkzeug - INFO - 127.0.0.1 - - [28/Mar/2024 19:05:04] "GET /predict HTTP/1.1" 200 -
+[2024-03-28 19:06:42,947] _internal.py - 96 - werkzeug - INFO - 127.0.0.1 - - [28/Mar/2024 19:06:42] "GET /predict HTTP/1.1" 200 -
+[2024-03-28 19:06:44,611] _internal.py - 96 - werkzeug - INFO - 127.0.0.1 - - [28/Mar/2024 19:06:44] "GET /predict HTTP/1.1" 200 -

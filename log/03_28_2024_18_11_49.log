@@ -1,0 +1,31 @@
+[2024-03-28 18:11:52,417] data_ingestion.py - 25 - root - INFO - data ingestion started
+[2024-03-28 18:11:54,399] data_ingestion.py - 28 - root - INFO -  reading a df
+[2024-03-28 18:11:56,017] data_ingestion.py - 32 - root - INFO -  i have saved the raw dataset in artifact folder
+[2024-03-28 18:11:56,017] data_ingestion.py - 34 - root - INFO - here i have performed train test split
+[2024-03-28 18:11:56,055] data_ingestion.py - 37 - root - INFO - train test split completed
+[2024-03-28 18:11:57,592] data_ingestion.py - 42 - root - INFO - data ingestion part completed
+[2024-03-28 18:11:57,835] data_transformation.py - 86 - root - INFO - read train and test data complete
+[2024-03-28 18:11:57,840] data_transformation.py - 87 - root - INFO - Train Dataframe Head : 
+       id  carat      cut color clarity  depth  table     x     y     z  price
+0  154365   1.03    Ideal     G     SI1   62.2   57.0  6.40  6.44  4.00   5430
+1   62389   1.53    Ideal     G     SI1   61.4   54.0  7.43  7.39  4.56  11962
+2  188842   0.30  Premium     H     SI1   62.8   57.0  4.24  4.22  2.66    554
+3   41632   0.40    Ideal     E     SI1   61.6   56.0  4.75  4.78  2.93    687
+4  110946   1.03    Ideal     G     VS1   62.4   56.0  6.43  6.50  4.04   7539
+[2024-03-28 18:11:57,845] data_transformation.py - 88 - root - INFO - Test Dataframe Head : 
+       id  carat        cut color clarity  depth  table     x     y     z  price
+0  108743   1.00    Premium     G     VS2   61.8   59.0  6.42  6.46  3.98   6728
+1  190822   1.01  Very Good     G     VS1   62.6   58.0  6.34  6.48  4.01   6152
+2  170967   0.38      Ideal     F      IF   60.0   57.0  4.75  4.77  2.86   1223
+3  166904   0.33      Ideal     G    VVS1   62.6   55.0  4.43  4.42  2.77    838
+4   34375   1.18      Ideal     G    VVS1   60.3   56.0  6.86  6.93  4.16  12081
+[2024-03-28 18:11:57,845] data_transformation.py - 31 - root - INFO - Data Transformation initiated
+[2024-03-28 18:11:57,845] data_transformation.py - 42 - root - INFO - Pipeline Initiated
+[2024-03-28 18:11:58,269] data_transformation.py - 106 - root - INFO - Applying preprocessing object on training and testing datasets.
+[2024-03-28 18:11:58,275] data_transformation.py - 116 - root - INFO - preprocessing pickle file saved
+[2024-03-28 18:11:58,279] model_trainer.py - 26 - root - INFO - Splitting Dependent and Independent variables from train and test data
+[2024-03-28 18:11:59,757] model_trainer.py - 44 - root - INFO - Model Report : {'LinearRegression': 0.9370478015782606, 'Lasso': 0.9370594461969669, 'Ridge': 0.937047386404345, 'Elasticnet': 0.8561929205103357}
+[2024-03-28 18:11:59,758] model_trainer.py - 57 - root - INFO - Best Model Found , Model Name : Lasso , R2 Score : 0.9370594461969669
+[2024-03-28 18:11:59,760] model_evaluation.py - 15 - root - INFO - evaluation started
+[2024-03-28 18:11:59,761] model_evaluation.py - 33 - root - INFO - model has register
+[2024-03-28 18:12:00,037] model_evaluation.py - 21 - root - INFO - evaluation metrics captured
